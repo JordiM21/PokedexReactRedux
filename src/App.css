@@ -1,0 +1,230 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.ash{
+    width: 150px;
+    text-align: center;
+}
+.input{
+    text-align: center;
+    margin-top: 100px;
+}
+.form input{
+    height: 30px;
+    width: 200px;
+}
+.form button{
+    height: 36px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 100px;
+}
+.poke-card{
+    border: 5px solid rgb(219, 60, 92);
+    text-align: center;
+    width: 250px;
+    margin: 15px;
+    padding: 20px 0;
+    box-shadow: 5px 5px 20px;
+    transition: 0.3s ease;
+}
+.poke-card:hover{
+    background-color: rgba(219, 60, 92, 0.615);
+    box-shadow: 0px 0px 0px;
+    border: 5px solid rgba(219, 60, 92, 0.615);
+    color: white;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 20px;
+    padding: 20px;
+    transition: 0.3s ease;
+}
+.search-bar{
+    text-align: center;
+    display: flex;
+    justify-content:space-evenly;
+}
+.search-bar select{
+    width: 250px;
+    height: 36px;
+}
+.search-bar button{
+    height: 36px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    width: 100px;
+}
+.search-bar input{
+    height: 30px;
+}
+.text-container{
+    text-align: center;
+}
+.text-red{
+    color: crimson;
+}
+.back{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    font-weight: 800;
+}
+.container-detail{
+    text-align: center;
+    background-color: rgba(206, 88, 111, 0.814);
+    margin: 100px;
+    border-radius: 10px;
+    margin-top: 250px;
+    padding-top: 100px;
+}
+.container-detail img{
+    width: 250px;
+}
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.big-font{
+    font-size: 20px;
+}
+.NavBar{
+    background-color: crimson;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    border-bottom: 15px solid black;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.pokemons{
+    margin-top: 100px;
+}
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button{
+    background-color: crimson;
+    border: 0px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    transition: 0.3s;
+}
+.pagination button:hover{
+    background-color: rgb(129, 12, 35);
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.stats-description{
+    margin: 0 100px;
+}
+
+.img-absolute{
+    position: absolute;
+    top: 15%;
+    left: 40%;
+}  
+.container-detail h1{
+    font-size: 60px;
+}
+.card{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.card p{
+    opacity: 0.5;
+    transition: 0.5s ease;
+}
+.card p:hover{
+    opacity: 1;
+}
+.move-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px 50px;
+    padding: 10px;
+    background-color: crimson;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.move-card{
+    background-color: rgba(255, 255, 255, 0.435) ;
+    opacity: 0.5;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+    transition: 0.3s ease;
+}
+.move-card:hover {
+    background-color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.move-container:hover .move-card{
+    display: block;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 880px) {
+    .stats-description {
+      margin: 0 50px;
+    }
+    .container-detail{
+        margin: 200px 50px;
+    }
+    .img-absolute{
+        position: absolute;
+        top: 10%;
+        left: 35%;
+    }  
+    
+  }
+  @media screen and (max-width: 680px) {
+    .stats-description {
+      margin: 0;
+    }
+    .container-detail{
+        margin: 220px 20px;
+    }
+    .img-absolute{
+        position: absolute;
+        top: 12%;
+        left: 32%;
+    }  
+  }
